@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+
+}
+.navbar{
+    height: 80px;
+    background-color: white;
+
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color:white;
+}
+@media (min-width: 991px) {
+ .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #455ae2;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+.ven{
+    color: white;
+    cursor: auto;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    line-height: 29.76px;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: auto;
+    -webkit-text-stroke: 1px rgb(180, 162, 207);
+    }
+  
+#presentacion {
+    text-align: center;
+    padding: 2em 0;
+}
+  
+#presentacion h2 {
+    font-size: 2em;
+}
+  
+#presentacion p {
+    font-size: 1.2em;
+}
+  
+#presentacion .btn1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(220deg, rgb(6, 147, 227) 0%, rgb(155, 81, 224) 100%);
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-color: rgb(17, 17, 17);
+    border-bottom-left-radius: 5.28px;
+    border-bottom-right-radius: 5.28px;
+    border-bottom-width: 0px;
+    border-left-color: rgb(17, 17, 17);
+    border-left-width: 0px;
+    border-right-color: rgb(17, 17, 17);
+    border-right-width: 0px;
+    border-top-color: rgb(17, 17, 17);
+    border-top-left-radius: 5.28px;
+    border-top-right-radius: 5.28px;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(249, 249, 249);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 16.799999px;
+    font-style: normal;
+    font-weight: 500;
+    height: 45.1875px;
+    line-height: 26.040001px;
+    padding-bottom: 9.6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9.6px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: 565px;
+    word-break: break-word;
+    margin-top: 40px;
+}
+.btn1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+#planes {
+    padding: 2em 0;
+    text-align: center;
+}
+  
+.planes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.plan {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+  
+.plan h3 {
+    font-size: 1.5em;
+}
+  
+.plan p {
+    font-size: 1em;
+}
+  
+#cobertura {
+    text-align: center;
+    padding: 2em 0;
+}
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.Avis{
+    color: rgb(89, 89, 203)
+}
+.col{
+    color: white;
+}
+.fon{
+    font-family: "valioomnes-semibold',Helvetica,Arial,Lucida,sans-serif";
+    text-align: center;
+    font-size: 4em;
+}
+
+.fon2{
+    font-family: "valioomnes-semibold',Helvetica,Arial,Lucida,sans-serif";
+    text-align: center;
+    font-size: 3em;
+}
+.fon3{
+    font-family: "valioomnes-semibold',Helvetica,Arial,Lucida,sans-serif";
+    text-align: justify;
+    font-size: 25px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+
+}
+.sty {
+    color: rgb(6, 147, 227);
+    text-decoration: none;
+}
+  
+.sty:visited {
+    color: rgb(6, 147, 227);
+    text-decoration: none;
+}
+  
+.sty:hover {
+    color: rgb(155, 81, 224);
+    text-decoration: none;
+}
+  
+.sty:active {
+    color: rgb(155, 81, 224);
+    text-decoration: none;
+}
+
+  
+.indicadores {
+    position: absolute; /* Posicionamiento absoluto para colocarlo sobre el slider */
+    bottom: 10px; /* Margen inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    display: flex;
+}
+  
+.indicador {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.indicador.activo {
+    background-color: #007bff;
+}
+  
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 85px;
+    height: 58px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+
+}
+.contenedor-imagen{
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+}
+
+.bo{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Sección de información del cliente */
+section.informacion-cliente {
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 10px; /* Agregar espacio debajo de la sección */
+}
+
+section.informacion-cliente h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+section.informacion-cliente ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.informacion-cliente li {
+    margin-bottom: 10px;
+}
+
+section.informacion-cliente a {
+    color: #333;
+    text-decoration: none;
+}
+
+section.informacion-cliente a:hover {
+    color: #455ae2;
+}
+
+/* Contenedor de secciones */
+.contenedor-secciones {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en varias filas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    max-width: 1000px; /* Ancho máximo para evitar que se desborde en pantallas anchas */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.contenedor-secciones .seccion {
+    flex: 0 0 20%; /* Asigna un ancho mínimo del 20% a cada sección */
+    padding: 15px; /* Agrega margen interno a las secciones */
+    text-align: center; /* Centra el contenido de las secciones */
+}
+
+.contenedor-secciones .seccion h2 {
+    margin-bottom: 10px; /* Agrega espacio debajo del título de la sección */
+}
+
+/* Estilos para responsive */
+@media (max-width: 768px) {
+    .contenedor-secciones {
+        flex-direction: column; /* Organiza las secciones una encima de la otra en pantallas pequeñas */
+    }
+
+    .contenedor-secciones .seccion {
+        flex: 1 0 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega espacio inferior para separar las secciones */
+    }
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+
+}
+
+.let{
+    color: rgb(0, 0, 0);
+display: block;
+font-family: Inter, sans-serif;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+height: 78px;
+line-height: 26.040001px;
+margin-block-end: 0px;
+margin-block-start: 0px;
+margin-inline-end: 27.5px;
+margin-inline-start: 27.5px;
+margin-left: 20px;
+margin-right: 20px;
+max-width: 565px;
+text-align: justify;
+width: 565px;
+}
+
+.imagen{
+margin: 0 auto;
+text-align: center;
+border-bottom-left-radius: 24px;
+border-bottom-right-radius: 24px;
+border-top-left-radius: 24px;
+border-top-right-radius: 24px;
+margin-top: 40px;
+}
+img.i{
+    border-radius: 10px;
+}
+.bi{
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 8px;
+
+    
+}
+.bi-facebook{
+color: #007bff;
+border-radius: 10px;
+}
+.bi-instagram{
+    color: white;
+    background-color: rgb(207, 45, 85);
+    border-radius: 10px;
+}
+.fin{
+    display: flex;
+    width: 100px;
+    height: 80px;
+    margin-left: 50px; 
+    text-align: center;
+    margin: 0 auto;
+}
+.letraven{
+    color: black;
+    font-size: 20px;
+    font-family: "Playwrite AU VIC";
+
+}
+.listav{
+    font-family: "valioomnes-semibold',Helvetica,Arial,Lucida,sans-serif";
+    text-align: justify;
+    font-size: 25px;
+    margin-right: 20%;
+    margin-left: 20%; 
+}
+
+.magen{
+    margin: 0 auto;
+    text-align: center;
+    height: 600px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+
+}
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+    justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+  }
+  .tarjeta:hover{
+    transform: scale(1.1);
+  }
+  
+  .tarjeta {
+    flex: 1 0 200px; /* Ajusta el ancho de las tarjetas (cambia 300px según tu diseño) */
+    margin: 20px; /* Añade espacio entre las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .tarjeta img {
+    width: 70%; /* Ajusta la imagen al ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+    
+  }
+  
+  .contenido-tarjeta {
+    padding: 15px;
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta {
+      flex: 1 0 50%; /* Ajusta el ancho de las tarjetas para pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tarjeta {
+      flex: 1 0 100%; /* Cada tarjeta ocupa el ancho completo en pantallas muy pequeñas */
+    }
+  }
+
+  .cartasletra{
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 45px;
+}
+.card-title{
+    text-align: center;
+    font-size: 30px;
+}
+.card{
+    display: flex;
+  flex-wrap: wrap; /* Permite que las secciones se ajusten en varias filas si es necesario */
+  justify-content: space-between; /* Distribuye el espacio entre las secciones */
+  max-width: 1000px; /* Ancho máximo para evitar que se desborde en pantallas anchas */
+  margin: 0 auto; /* Centra el contenedor */
+  display: inline;
+    flex: 1 0 300px; /* Ajusta el ancho de las tarjetas (cambia 300px según tu diseño) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    font-size: 25px;
+    color:#333;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    
+
+}
+@media (max-width: 768px) {
+    .card {
+      flex: 1 0 50%; /* Ajusta el ancho de las tarjetas para pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 0 100%; /* Cada tarjeta ocupa el ancho completo en pantallas muy pequeñas */
+    }
+  }
+.titulo{
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  color: rgb(46, 43, 43);
+
+}
+.nego{
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.neg{
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.card-link{
+    display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #455ae2;
+}
+.card-link:hover{
+    color: darkorchid;
+}
+.tarjet{
+    text-decoration: none;
+    color:black
+}
+.contenedor-seccione {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en varias filas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    max-width: 1000px; /* Ancho máximo para evitar que se desborde en pantallas anchas */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.leter{
+
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  color: rgb(63, 57, 57);
+}
+.lete{
+    color: rgb(122, 43, 161);
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+}
+.colore{
+    color: rgb(102, 38, 134);
+    text-align: center;
+    font-size: 30px;
+}
+.card-text{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(63, 57, 57);
+
+}
+.bot{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.otitulo{
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  color: rgb(49, 46, 46);
+}
+.informacion-cli{
+    background-color: rgb(253, 242, 223);
+    margin-top: 30px; /* Agregar espacio debajo de la sección */
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.button span{
+    width: 1.8em;
+    height: 1.8em;
+}
+.bi-sim{
+    font-size: 40px;
+}
+.bi-laptop{
+    font-size: 40px;
+}
+.conte{
+    display: flex;
+}
+.btn-lg{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    margin: 0 auto; /* Centra el contenedor */
+    
+}
+.leterr{
+margin-bottom: 40px;
+text-align: center;
+font-family: "Kanit", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 22px;
+color: rgb(117, 107, 107);
+}
+.btn{
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 40px 50px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover{
+    background-image: linear-gradient(220deg, rgb(155, 81, 224) 0%, rgb(155, 81, 224) 100%);;
+    color: white;
+}
+.slide{
+    margin-top: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+.slide img{
+    height: 80vh;
+}
+.d-block{
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: 100px;
+}
